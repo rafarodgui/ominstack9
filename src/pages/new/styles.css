@@ -1,0 +1,32 @@
+
+/* NEW */
+
+label#thumbnail{
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px dashed #999;
+    background-size: cover;
+    height: 160px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label#thumbnail input{
+    display:none;
+}
+label#thumbnail:hover{
+    transform: translateY(-4px);
+    transition: 300ms;
+}
+label#thumbnail.has-thumbnail{
+    border: 0;
+}
+label#thumbnail.has-thumbnail:hover{
+    transform: none;
+}
+label#thumbnail.has-thumbnail img{
+    display: none;
+}

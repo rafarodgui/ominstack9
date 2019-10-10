@@ -1,0 +1,23 @@
+import React from 'react';
+
+import './App.css'
+
+import logo from '././assets/logo.svg';
+
+import Routes from './routes'
+
+import { Link } from 'react-router-dom';
+
+function App() {
+  return (
+    <div className="container">
+      <a href="/"><img src={logo} alt="AirCnC"/></a>
+      
+      <div className="content">
+        <Routes />
+      </div>
+    </div>
+  );
+}
+
+export default App;
